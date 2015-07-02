@@ -1,0 +1,33 @@
+<!doctype html>
+<!--This call below says that all code within the html tag (which is all the code in the project) is going to be controlled by the controller.js file-->
+<html lang="en" ng-app="chasingTime"><!--this connects to controller.js, specifically the call in the parameters-->
+<head>
+<meta charset="UTF-8">
+  <title>Noah's Music</title>
+  <script src="libs/angular.min.js"></script>
+  
+  <script src="js/controllers.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="heading"></div> <!--This will be on the index and the rest will be thrown into the partials.-->
+	<div class="fillit">
+	    <h1>Just filling it up for now.</h1>
+		<h2>We'll have a lot more information soon.</h2>
+		<p>So keep your eyes peeled!</p>
+	</div>
+	<div class="main" ng-controller="MyController"><!--anything we placed inside $scope will be available inside the ng-controller called.-->
+		<ul class="musicList">
+			<li class="music cf" ng-repeat="item in music"> 
+				<div class="info">
+				    <h2>{{ item.author }}</h2>
+					<p>{{ item.title + ", " }}</p>
+				</div>
+			</li>
+		
+		</ul>
+	</div>
+	
+
+</body>
+</html>
