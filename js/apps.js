@@ -11,6 +11,10 @@ chasingTime.config(['$routeProvider', function($routeProvider){
 		templateUrl: 'partials/list.html',
 		controller: 'ListController'
 	}).
+	when('/detailed/:itemId', {
+		templateUrl: 'partials/detailed.html',
+		controller: 'DetailedController'
+	}).
 	 otherwise({
 		 redirectTo: '/list'
 	 });
