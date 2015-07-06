@@ -228,11 +228,11 @@ border-bottom: solid 6px  #4E2920;
 .music img {
   display: block;
   float: left;
+  padding: 5px 5px 0 8px;
   width: 60px;
   -webkit-border-radius: 12px;
   border-radius: 12px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+
 }
 
 .music:last-child {
