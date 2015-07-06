@@ -195,10 +195,10 @@ border-bottom: solid 6px  #4E2920;
   padding: 6px 0 15px 0; 
   border-bottom: 1px solid lime;
   opacity: .9;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .musicList a {
