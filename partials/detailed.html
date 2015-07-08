@@ -3,14 +3,10 @@
 	<a href="#/detailed/{{prevItem}}" class="btn btn-left">&lt;</a>
 	<a href="#/detailed/{{nextItem}}" class="btn btn-right">&gt;</a>
 	<h1>{{music[whichItem].author}}</h1>
-	<div class="info">
-		<h3>{{music[whichItem].title}}</h3>
-		    <img ng-src="images/{{music[whichItem].onscreen}}.jpg" alt="Photo of {{music[whichItem].source}}">
-		        <div class="info">
-				    <span>Title: <a ng-href="{{music[whichItem].links}}">{{item.title}}</a></span>
-			    </div>
-	</div>
-	
+	<p>Go to github and get videogular up and working.</p>
+	    <div class="info">
+	    	<iframe width="600" height="345" ng-src="{{music[whichItem].links}}"></iframe>
+		</div>
   </div>
-  <a href="index.html">&laquo; Back to Search</a>
+  <a id="link" href="index.html">&laquo; Back to Search</a>
 </section>

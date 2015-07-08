@@ -18,10 +18,10 @@ musicController.controller('DetailedController', ['$scope', '$http', '$routePara
 	if ($routeParams.itemId > 0){
 		$scope.prevItem = Number($routeParams.itemId)-1;//$routeParams come in as a String so we must cast it to a number
 	} else{
-		$scope.prevItem = $scope.author.length-1;
+		$scope.prevItem = $scope.music.length-1;
 	}
 	
-	if ($routeParams.itemId < $scope.artists.lenght-1){
+	if ($routeParams.itemId < $scope.music.length-1){
 		$scope.nextItem = Number($routeParams.itemId)+1; //casting to a number
 	} else{
 		$scope.nextItem = 0;
