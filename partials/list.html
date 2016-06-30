@@ -25,12 +25,14 @@
   </div>
   
 	<ul class="musicList" ng-show="query">
-		<li ng-animate="'animate'" class="music cf" ng-repeat="item in music | filter: query | orderBy: songOrder:direction"> 
+		<li class="music cf" ng-repeat="item in music | filter: query | orderBy: songOrder:direction"> 
 			<a id="muLi" href="#/detailed/{{music.indexOf(item)}}">
 			    <img ng-src="images/{{item.source}}.jpg"></img>
 			    <div class="info">
 			        <h2>Author: {{ item.author }}</h2>
 				    <span>Title: <a ng-href="{{item.links}}">{{item.title}}</a></span>
+				   
+				   
 			    </div>
 		</li>
 	</ul>

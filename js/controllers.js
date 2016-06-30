@@ -14,7 +14,7 @@ musicController.controller('DetailedController', ['$scope', '$http', '$routePara
 	 $scope.music = data;
 	 $scope.whichItem = $routeParams.itemId; //This is a variable (whichItem) that allows the routeParams to get the url and any data being passed to it.
 	
-	//this checks to see which is the first and last items, and if they are, you can nav forward or back respectively.
+	//this checks to see which is the first and last items, and if they are, you can ##nav forward or back respectively.
 	if ($routeParams.itemId > 0){
 		$scope.prevItem = Number($routeParams.itemId)-1;//$routeParams come in as a String so we must cast it to a number
 	} else{
